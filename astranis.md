@@ -11,18 +11,18 @@ Looks like a linux command, and we literally do not have permission to access wh
 
 ## What will this pseudo-code print, and why? https://i.imgur.com/6n6aEzm.png
 
-//IF deadlock protection is enabled
+//IF deadlock protection is enabled  
 
-"Foo!" // thread F1 fires on its own thread, prints and locks m1/m2.
-"Baz!" // thread F2 fires second on its own thread and prints.
-"Bar!" // F2 checks for m1/m2, they're locked!  F2 waits. F1 completes.
-"Qux!" // F2 wakes and completes.
+"Foo!" // thread F1 fires on its own thread, prints and locks m1/m2.  
+"Baz!" // thread F2 fires second on its own thread and prints.  
+"Bar!" // F2 checks for m1/m2, they're locked!  F2 waits. F1 completes.  
+"Qux!" // F2 wakes and completes.  
 
-//IF deadlock protection is not enabled
+//IF deadlock protection is not enabled  
 
-"Foo!" // thread F1 fires on its own thread, prints and locks m1.
-"Baz!" // thread F2 fires second on its own thread and prints and locks m2.
-//output ends, F2 and F1 are in deadlock, each holding one resource and requiring the other.
+"Foo!" // thread F1 fires on its own thread, prints and locks m1.  
+"Baz!" // thread F2 fires second on its own thread and prints and locks m2.  
+//output ends, F2 and F1 are in deadlock, each holding one resource and requiring the other.  
 
 ## This state machine ( https://i.imgur.com/5srBQsG.png ) reads input character by character and accepts strings if it is in state S6. Its goal is to accept a string if it contains a certain substring. What strings will it accept? Will it always achieve its goal? If not, how would you improve it?
 
