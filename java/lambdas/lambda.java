@@ -2,6 +2,7 @@
 
 public class Main {
 
+    //acts an an abstract function, similiar to c++ declared funciton.
     interface NumericTest 
     {
         boolean computeTest(int n);
