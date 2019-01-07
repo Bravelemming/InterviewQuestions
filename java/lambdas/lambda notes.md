@@ -1,6 +1,9 @@
 # what are lambda's?
 :  a lambda is a short anonymous function.  
+<<<<<<< HEAD
 :  replaces anonymous classes.
+=======
+>>>>>>> b8c23f1fddf76c3d8961171d8882d495463d6d3b
 
 ## why's it awesome?
 :  basically allows for a paradigm shift from object oriented programming to functional programming, which as a C++ programmer I love.
@@ -18,12 +21,19 @@
 - less to code, saves time.
 - easier to read. 
 - allows functional programming.
+<<<<<<< HEAD
 - reusable, evaluated at runtime. 
+=======
+>>>>>>> b8c23f1fddf76c3d8961171d8882d495463d6d3b
 
 
 ## cons: 
 - more overhead; because they are compiled at runtime, they use system resources.
+<<<<<<< HEAD
 - harder to debug because error is not detected in compile time
+=======
+- harder to fix; also because they are compiled at runtime, it's harder to find errors.
+>>>>>>> b8c23f1fddf76c3d8961171d8882d495463d6d3b
 
 ---
 ## short example:
