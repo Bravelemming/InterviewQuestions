@@ -1,5 +1,5 @@
 //an example of a lambda, with interface.  testing two bools.
-
+//jack kinne
 public class Main {
 
     //acts an an abstract function, similiar to c++ declared funciton.
