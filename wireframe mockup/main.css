@@ -16,15 +16,12 @@ body {
     /* round those corners*/
     border: 8px solid white;
     border-radius: 0 0 1em 1em;
-}
-
-#saleHeader:hover{
-    opacity: 0.8;
-    transition-duration: 5s;
+    
 }
 
 #developer{
     width: 100%;
+    opacity: 0.8;
     /* round those corners*/
     border-radius: 25em;
 }
