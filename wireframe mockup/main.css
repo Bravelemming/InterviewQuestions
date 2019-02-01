@@ -1,0 +1,119 @@
+/* Jack Daniel Kinne, 2019 */
+
+body {
+    background: black;
+    background-image: url("images/bokeh.jpg");
+    font-family: Oswald;
+    color: white;
+    margin: 0;
+}
+
+/* section 1 */
+
+#saleHeader h1{ 
+    margin: auto;
+    text-align: center;
+    /* round those corners*/
+    border: 8px solid white;
+    border-radius: 0 0 1em 1em;
+}
+
+#saleHeader:hover{
+    opacity: 0.8;
+    transition-duration: 5s;
+}
+
+#developer{
+    width: 100%;
+    /* round those corners*/
+    border-radius: 25em;
+}
+
+/* float box */
+
+#transFloatBox{
+    text-align: right;
+    width: 30%;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    margin: 1em;
+    
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 2px darkblue;
+    color: white;
+}
+
+/* section 2 */
+
+#sectionTitle{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    /* round those corners*/
+    border: 8px solid white;
+    border-radius: 25px;    
+}
+
+/*section 3 */
+
+#itemListing {
+    padding: 2em;
+    /* round those corners*/
+    border: 8px solid white;
+    border-radius: 25px;
+    overflow-y: scroll;
+}
+
+li {
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+.icon{
+    width: 5%;
+    padding-right: 0%;
+    background-color: white;
+    
+    /* round those corners*/
+    border-radius: 5px;
+}
+
+/* squares and footer */
+
+.floatPic{
+    width: 15%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    
+    /* round those corners*/
+    border-radius: 5px;
+}
+
+#csdegree{
+    float: left;
+}
+
+#hackathonaward{
+    float: right;
+}
+
+
+#footerbanner{
+    width: 100%;
+    max-height: 15em;
+    /* to eliminate bottom margin */
+    display: block;
+    /* round those corners*/
+    border-radius: 25px 25px 0 0; 
+}
+
+footer{
+    /* sticky */
+    margin-bottom: 0;
+}
+
+#footerbanner:hover{
+    opacity: 0.8;
+    transition-duration: 3s;
+}
