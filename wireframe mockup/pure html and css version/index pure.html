@@ -6,31 +6,8 @@
         <title>Hire Jack Daniel Kinne</title>
         <meta name="description" content="A wireframe example for MZ.">
         <link rel="stylesheet" href="main.css">
-        
         <!-- Oswald font -->
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
-        
-        <!-- For Parsing JSON objects -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-        
-        <!-- Grab JSON data, populate into ul -->
-        <script type="text/javascript">
-            $(function(){
-                $.getJSON('items.json',function(data){
-                    // successful retreive
-                    console.log('success');
-                    //Take each element from listing, append as li
-                    $.each(data.listing,function(i,item){
-                        $('ul').append('<li> <img class="icon" src="'+item.url+'"> '+item.text+'</li>');
-                    });
-                }).error(function(){
-                    // fail
-                    console.log('error');
-                });
-            });
-        </script>
-        
-        
     </head>
     
     <body>
@@ -57,8 +34,12 @@
             </div>
             
             <div id="itemListing">
-                <ul id="icons"> 
+                <ul> 
+                    <li><img class="icon" src="images/panda.png">Starving Pandas</li>
                     
+                    <li><img class="icon" src="images/web.png">Website Redesigns</li>
+                    
+                    <li><img class="icon" src="images/hackathonaward.jpg">Steel Slats</li>
                 </ul>
             </div>
             

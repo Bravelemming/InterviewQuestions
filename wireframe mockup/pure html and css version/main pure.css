@@ -58,7 +58,6 @@ body {
     /* round those corners*/
     border: 8px solid white;
     border-radius: 25px;
-    /* scrollable text area */
     overflow-y: scroll;
 }
 
@@ -84,15 +83,8 @@ li {
     margin-top: 5%;
     margin-bottom: 3%;
     
-    /* round those corners */
+    /* round those corners*/
     border-radius: 5px;
-    /* Grow picture on hover, slowly */
-    transition: all .2s ease-in-out; 
-}
-
-/* Grow picture on hover! */
-.floatPic:hover { 
-    transform: scale(1.1); 
 }
 
 #csdegree{
@@ -119,7 +111,6 @@ footer{
 }
 
 #footerbanner:hover{
-    /* Subtle transition effect */
     opacity: 0.8;
-    transition-duration: 1s;
+    transition-duration: 3s;
 }
