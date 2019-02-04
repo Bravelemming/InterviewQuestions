@@ -1,6 +1,12 @@
 
 {
-
+"saleHeaderImage":[
+{
+	"id": "developer",
+	"url": "images/developer.jpg",
+	"title": "will work for yoga classes."
+}
+],
 "listing":[
 {
     "id": 1,

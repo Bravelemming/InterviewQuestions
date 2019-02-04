@@ -19,6 +19,14 @@
                 $.getJSON('items.json',function(data){
                     // successful retreive
                     console.log('success');
+                    
+                    
+                    //<img id="developer" src="images/developer.jpg" title="Will work for yoga classes.">
+                    //append image to sale header
+                    $.each(data.saleHeaderImage,function(i,item){
+                        $('#saleHeader').append('<img id="'+ item.id +'" src="'+item.url+'" title="'+item.title+'">');
+                    });
+                    
                     //Take each element from listing, append as li
                     $.each(data.listing,function(i,item){
                         $('ul').append('<li> <img class="icon" src="'+item.url+'"> '+item.text+'</li>');
@@ -42,7 +50,7 @@
                     </h1>
                 </header>
                 
-                <img id="developer" src="images/developer.jpg" title="Will work for yoga classes.">
+                
                 
             </div>
             
