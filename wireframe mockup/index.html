@@ -18,16 +18,42 @@
             $(function(){
                 $.getJSON('items.json',function(data){
                     // successful retreive
-                    console.log('success');
+                    console.log('success');   
                     
+                    //countdown clock
                     
-                    //<img id="developer" src="images/developer.jpg" title="Will work for yoga classes.">
-                    //append image to sale header
+                    // Set countdown to json timestamp.
+                    var countDownDate = new Date( data.timestamp ).getTime();
+                        
+                    var x = setInterval(function() {
+                        // Get todays date and time
+                        var now = new Date().getTime();
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        // Display the result in #timer
+                        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + " ";
+
+                        // write expired when complete. 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("timer").innerHTML = "EXPIRED";
+                        }
+                        
+                    }, 1000); //END CLOCK 
+                    
+                          
+                    //append saleHeaderImage's from json to sale header
                     $.each(data.saleHeaderImage,function(i,item){
                         $('#saleHeader').append('<img id="'+ item.id +'" src="'+item.url+'" title="'+item.title+'">');
                     });
                     
-                    //Take each element from listing, append as li
+                    //Take each element from listing JSON, append as li
                     $.each(data.listing,function(i,item){
                         $('ul').append('<li> <img class="icon" src="'+item.url+'"> '+item.text+'</li>');
                     });
@@ -35,7 +61,10 @@
                     // fail
                     console.log('error');
                 });
-            });
+            });    
+            
+            
+            
         </script>
         
         
@@ -60,7 +89,13 @@
             
             <div id="saleTimer">
                 <div id="sectionTitle">
-                    <h2>Dev employee sale will end in XXX hours</h2>
+                    <h2 id ="hLeft">Dev employee sale will end in</h2> 
+                    
+                    <!-- Countdown clock  -->                    
+                    
+                    <h2 id="timer"></h2>
+                    
+                    <h2 id="hRight">seconds</h2>
                 </div>
             </div>
             
@@ -90,8 +125,6 @@
                 <img id="footerbanner" src="images/footerbanner.jpg" title="Thanks for the review!">
             </a>
         </footer>
-            
-        
         
     </body> 
     

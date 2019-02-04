@@ -51,7 +51,26 @@ body {
     border-radius: 25px;    
 }
 
-/*section 3 */
+#hLeft{
+    /* to concat h2 blocks */
+    display: inline-block;
+
+    
+}
+
+#timer{
+    /* to concat h2 blocks */
+    display: inline-block;
+}
+
+#hRight{
+    /* to concat h2 blocks */
+    display: inline-block;
+    
+    
+}
+
+/* section 3 */
 
 #itemListing {
     padding: 2em;
@@ -69,6 +88,7 @@ li {
 }
 
 .icon{
+    /* size and shape of icons */
     width: 5%;
     padding-right: 0%;
     background-color: white;
@@ -80,6 +100,7 @@ li {
 /* squares and footer */
 
 .floatPic{
+    /* dynamically position */
     width: 15%;
     margin-top: 5%;
     margin-bottom: 3%;
